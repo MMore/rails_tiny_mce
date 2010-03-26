@@ -7,7 +7,9 @@
     Insert:
 		    <br/>
 		    <%= link_to "Detail", p.image.url( :detail_preview ), :onclick => "select_thumb(this);return false;"%>
-		    <br/>
+        <br/>
+        <%= link_to "Original", p.image.url, :onclick => "select_thumb(this);return false;"%>
+        <br/>
 		    <%= link_to "Large", p.image.url( :large_thumb ), :onclick => "select_thumb(this);return false;"%>
 		    <br/>
 		    <%= link_to "medium", p.image.url( :medium_thumb ), :onclick => "select_thumb(this);return false;"%>
